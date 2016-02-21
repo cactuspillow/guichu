@@ -13,7 +13,7 @@
 	<!-- 设置webapp的icon -->
 	<link rel="apple-touch-icon-precomposed" href="logo.png" />
 	<!-- 设置CSS文件指向 -->
-	<link rel="stylesheet" href="http://192.168.1.101/dashboard/site/guichu/css/gc_preview.css" type="text/css" media="all">
+	<link rel="stylesheet" href="../css/gc_preview.css" type="text/css" media="all">
 	<!-- 引用mini js -->
 	<script src="http://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 
@@ -24,12 +24,69 @@
 	$(document).ready(function(){ 
 		var deviceWidth = $(window).width();
 
+		// 上方按钮区域的宽度
+		var topButtonsWidth = deviceWidth - 64
+		$(".topButtons").css("width",topButtonsWidth)
+
+		// 再来一个按钮的paddingTop
+		var backBtnPaddingTop = ( $(".topButtons").height()- $(".backBtn").height() )/2
+		$(".backBtn").css("paddingTop",backBtnPaddingTop)
+		$(".backBtn").css("paddingBottom",backBtnPaddingTop)
+
+		// video阴影的宽高
+		var videoShadowWidth = deviceWidth * 0.9
+		var videoShadowHeight = videoShadowWidth * 241 / 1185
+		$(".videoShadow").css("width",videoShadowWidth)
+		$(".videoShadow").css("height",videoShadowHeight)
+
+		// shareIcon居中显示的marginleft
+		var shareIconMarginleft = ( deviceWidth *0.7 /3 - 72 ) / 2
+		$(".shareIcon").css("marginLeft", shareIconMarginleft)
 	});	
+
 </script>
 
-	<div>
-		
+	<div class="topButtons">
+		<h1>保存视频到相册</h1>
+		<a class="backBtn" href="skill_celebrate/gc_celebrate_letterhead.html">再来一个</a>
 	</div>
+
+	<div class="videoContainer">	
+		<video controls poster="../images/video_preview.png">
+		  <source src="../resource/video.mp4" type="video/mp4">
+		</video>
+		<div class="videoShadow"></div>
+	</div>
+
+	<div class="shareContainer">
+		<h2>分享到</h2>
+		<div class="shareItems">
+
+			<!-- 一个分享button -->
+			<div class="shareItem">
+				<div class="shareIcon">
+					<img src="../img/share_wechat.png">
+				</div>
+				<p>微信</p>
+			</div>
+			
+			<!-- 一个分享button -->
+			<div class="shareItem">
+				<div class="shareIcon">
+					<img src="../img/share_QQ.png">
+				</div>
+				<p>QQ</p>
+			</div>
+
+			<!-- 一个分享button -->
+			<div class="shareItem">
+				<div class="shareIcon">
+					<img src="../img/share_more.png">
+				</div>
+				<p>更多方式</p>
+			</div>
+
+		</div>
 
 
 </body>

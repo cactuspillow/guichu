@@ -22,6 +22,7 @@
 
 
 <script type="text/javascript">
+
 	$(document).ready(function(){ 
 		var deviceWidth = $(window).width();
 		var userAvatarMarginLeft = ( deviceWidth - 100 ) / 2;
@@ -40,8 +41,9 @@
 		var defaultLeft = buttonContainerWidth * 0.025 
 		$("#clickGuichuSkillButton").click(function(){
  			if (parseFloat($(".selectedBorder").css("left")) == moveDistance + defaultLeft ){
+
 				$(".selectedBorder").animate({left:defaultLeft},300,"swing");
-			} 
+			}
 		});
 
 		$("#clickGuichuFeedButton").click(function(){
