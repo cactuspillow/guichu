@@ -1,0 +1,125 @@
+html {
+	background-color: #131b29;
+	width:100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Avenir";
+	position:relative;
+}
+
+/*关闭按钮*/
+.closeBtn {
+	position: absolute;
+	top: 32px;
+	left: 32px;
+	width: 32px;
+	height: 32px;
+	border-radius: 100px;
+	background-image: url(http://192.168.1.101/dashboard/site/guichu/img/close_btn.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+/*百分比*/
+.percentage {
+	position: absolute;
+	top: 60px;
+	left: 32px;
+	width: 70px;
+	height: 60px;
+}
+
+.percentage h1 {
+	float: left;
+	width: 100%;
+	height: 24px;
+	font-size: 38px;
+	font-weight: 500;
+	color: #fff;
+}
+
+.percentage p {
+	float: left;
+	text-align: left;
+	margin-top: 0;
+	font-size: 12px;
+	width: 100%;
+	color: #fff;
+	opacity: 0.2;
+}
+
+.actorsStatus {
+	float: right;
+	margin-top: 36px;
+	margin-right: 32px;
+	width: 100%;
+	height: 50%;
+}
+
+.actorsStatus p {
+	float: right;
+	width: 100%;
+	height: 18px;
+	margin-top: 0;
+	color: #fff;
+	font-size: 16px;
+	text-align: right;
+	font-weight: normal;
+
+
+}
+
+.progress {
+	float: left;
+	margin-top: 10%;
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+.progress h1 {
+	float: right;
+	text-align: right;
+	width: 100%;
+	height: 24px;
+	font-size: 24px;
+	color: #fff;
+	font-weight: normal;
+}
+
+
+
+.progressBar {
+	float: left;
+	margin: 0 0;
+	width: 100%;
+	height: 3px;
+	border-radius: 100px;
+}
+
+.progressBarBg {
+	float: left;
+	width: 100%;
+	height: 100%;
+	border-radius: 100px;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.progressBarFg {
+	float: left;
+	width: 70%;
+	height: 100%;
+	border-radius: 100px;
+	background-color: #fff;
+}
+
+.nextPage {
+	float: left;
+	margin-top: 100px;
+	width: 100%;
+	height: 200px;
+}
