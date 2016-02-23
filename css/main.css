@@ -11,6 +11,26 @@ html, body {
 	height:100%;
 }
 .topContainer {
+
+	/*使用flex布局*/
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+
+	/*新的元素可换行显示，不加此代码会挤在一行*/
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+	/*选取space-around的居中且剩余空间平均分配*/
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+
+	/*样式*/
 	background-color: #0f151e;
 	width: 100%;
 	height:318px;	
@@ -27,15 +47,20 @@ html, body {
 }
 
 .menuButtonContainer {
-	margin-left: 10px;
+	margin: 0 10px;
 	height: 100%;
 	position: relative;
+
+	/*使用flex布局*/
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
 }
 
 .menuBar a {
 	padding: 11px 0;
 	width: 50%;
-	float: left;
 	color: #fff;
 	font-size: 16px;
 	font-weight: bold;
@@ -54,12 +79,6 @@ html, body {
 	box-shadow: 0 3px 3px rgba(0,0,0,0.3);
 }
 
-/*bottomContainer CSS*/
-.bottomContainer {
-	background-color: #131b28;
-	width: 100%;
-	height: 400px;
-}
 
 .userAvatar {
 	background-color: #fff;
@@ -81,7 +100,6 @@ html, body {
 	width: 100%;
 	height: 45px;
 	margin-top: 20px;
-	float:left; 
 }
 
 .userInfo h1 {
@@ -106,8 +124,8 @@ html, body {
 	width: 90%;
 	height: 50px;
 	border-radius: 5px;
-	float: left;
-	margin: 20px 0 0 5%;	
+	margin-top: 10px;	
+	margin-bottom: 30px;
 }
 
 .guichuInput {
@@ -121,11 +139,11 @@ html, body {
 	font-weight: 500;
 }
 
+/*底部容器CSS*/
 .bottom-container {
 	margin-top: 10px;
 	width: 100%;
 	height: 320px;
-	background-color: #ccc;
 }
 
 .flex-container {
@@ -136,19 +154,21 @@ html, body {
 	display: -ms-flex;
 	display: flex;
 	
-	/*选取space-around的水平空间平均分配*/
-    justify-content: space-around;
+	/*新的元素可换行显示，不加此代码会挤在一行*/
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
 
-    background: #f0f3f9;
+	/*样式*/
     width: 100%;
     height: 320px;
 }
 
 .skillItem {
 	/*item样式*/
-	height: 160px;
 	width: 33.33%;
-	background-color: #ccc222;
+	height: 160px;
 	
 	/*使用flex布局*/
 	display: -webkit-flex;
@@ -160,78 +180,55 @@ html, body {
 	-webkit-flex-flow: row wrap;
 	-moz-flex-flow: row wrap;
 	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
 	
-	/*选取space-around的水平空间平均分配*/
+	/*选取space-around的居中且剩余空间平均分配*/
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
     justify-content: space-around;
 
 }
 
+
+
 .skillIcon {
+	/*技能item的图标样式*/
 	background-color: #fb4300;
+	margin-top: 20px;
 	width: 60px;
 	height: 60px;
 	border-radius: 100px;
 	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.9);
 }
 
-.skillItem h3 {
-	width: 100%;
-	text-align: center;
-}
-
-/*box布局的skillItem*/
-/*
-.skillItem {
-	width: 33.333%;
-	height: 150px;
-	float: left;
-}
-
-.skillIcon {
-	background-color: #fb4300;
-	width: 65px;
-	height: 65px;
-	border-radius: 100px;
-	margin-top: 35px;
-	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.9);
-}
-
-/*鬼畜让它说a标签*/
-/*.skillIcon a {
+.skillIcon a {
 	float: left;
 	width: 100%;
 	height: 100%;
-	border-radius: 100px;
-	text-decoration: none;
-
+	-webkit-tap-highlight-color:transparent;
 
 }
-
-.skillInfo {
-	margin: 15px 0 0 0;
-}
-
-.skillName {
+.sikillTittle {
+	/*技能item的名称样式*/
+	margin-top: 10px;
 	width: 100%;
+	height: 16px;
+	font-size: 14px;
 	color: #fff;
-	font-size:14px;
-	font-weight: bold;
+	text-decoration: none;
 	text-align: center;
-	float: left;
-	margin: 0;
 }
 
-.skillDesc {
-	margin: 3px 0 0 15%;
-	width: 70%;
+.skillSubtittle {
+	/*技能item的副标题样式*/
+	margin-top: -15px;
+	width: 100%;
+	height: 8px;
+	font-size: 8px;
 	color: #fff;
 	opacity: 0.3;
-	font-size:11px;
 	text-align: center;
-	float: left;*/
 }
-*/
-
-
 
 

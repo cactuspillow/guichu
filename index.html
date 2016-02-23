@@ -23,16 +23,10 @@
     <script type="text/javascript">
     $(document).ready(function() {
         var deviceWidth = $(window).width();
-        var userAvatarMarginLeft = (deviceWidth - 100) / 2;
-        $(".userAvatar").css("marginLeft", userAvatarMarginLeft)
-
-        // /*skillIcon Position*/
-        // var skillIconMarginLeft = ($(".skillItem").width() - $(".skillIcon").width()) / 2
-        // $(".skillIcon").css("marginLeft", skillIconMarginLeft)
 
         //menuBar Button With
-        var buttonContainerWidth = deviceWidth - 20;
-        $(".menuButtonContainer").css("width", buttonContainerWidth)
+        // var buttonContainerWidth = deviceWidth - 20;
+        // $(".menuButtonContainer").css("width", buttonContainerWidth)
 
         //menuBar Click Function
         var moveDistance = buttonContainerWidth * 0.5
@@ -79,69 +73,42 @@
         <!-- 底部flex容器 -->
         <div class="bottom-container">
             <div class="flex-container">
+
+                <!-- 一个skillItem -->
                 <div class="skillItem s1">
                     <div class="skillIcon"></div>
-                    <h3>鬼畜让Ta说</h3>
+                    <h3 class="sikillTittle">鬼畜让Ta说</h3>
+                    <p class="skillSubtittle l1">明星的脸明星的嘴</p>
+                    <p class="skillSubtittle l2">你的声音</p>
+                </div> 
+
+                <!-- 一个skillItem -->       
+                <div class="skillItem s1">
+                    <div class="skillIcon">
+                        <a href="html/skill_celebrate/gc_celebrate.html"></a>
+                    </div>
+                    <h3 class="sikillTittle">鬼畜祝福语</h3>
+                    <p class="skillSubtittle l1">明星的脸明星的嘴</p>
+                    <p class="skillSubtittle l2">你的声音</p>
+
+                <!-- 一个skillItem -->       
                 </div>
+                    <div class="skillItem s1">
+                    <div class="skillIcon"></div>
+                    <h3 class="sikillTittle">明星喜好</h3>
+                    <p class="skillSubtittle l1">明星的脸明星的嘴</p>
+                    <p class="skillSubtittle l2">你的声音</p>
+                </div>                
+                <div class="skillItem s1">
+                    <div class="skillIcon"></div>
+                    <h3 class="sikillTittle">署名片尾</h3>
+                    <p class="skillSubtittle l1">明星的脸明星的嘴</p>
+                    <p class="skillSubtittle l2">你的声音</p>
+                </div>                
             </div>
             
-
         </div>
 
-
-
-        <!-- 底部容器 -->
-        <!-- box布局的skillItem -->
-
-<!--    
-
-            <div class="skillItem">
-                <div class="skillIcon">
-                    <a href="html/skill_lips/gc_lips.html" id="skillGCLips"></a>
-                </div>
-                <div class="skillInfo">
-                    <p class="skillName">鬼畜让它说</p>
-                    <p class="skillDesc">what the fuck you makes it</p>
-                </div>
-            </div>
-            <div class="skillItem">
-                <div class="skillIcon">
-                    <a href="html/skill_celebrate/gc_celebrate.html" id="skillGCLips"></a>
-                </div>
-                <div class="skillInfo">
-                    <p class="skillName">鬼畜祝福语</p>
-                    <p class="skillDesc">no matter how life is so beautiful</p>
-                </div>
-            </div>
-            <div class="skillItem">
-                <div class="skillIcon"></div>
-                <div class="skillInfo">
-                    <p class="skillName">Amazing App</p>
-                    <p class="skillDesc">stupid baby come on kiss me</p>
-                </div>
-            </div>
-            <div class="skillItem">
-                <div class="skillIcon"></div>
-                <div class="skillInfo">
-                    <p class="skillName">鬼畜让它说</p>
-                    <p class="skillDesc">what the fuck you makes it</p>
-                </div>
-            </div>
-            <div class="skillItem">
-                <div class="skillIcon"></div>
-                <div class="skillInfo">
-                    <p class="skillName">Guichu Happy</p>
-                    <p class="skillDesc">no matter how life is so beautiful</p>
-                </div>
-            </div>
-            <div class="skillItem">
-                <div class="skillIcon"></div>
-                <div class="skillInfo">
-                    <p class="skillName">Amazing App</p>
-                    <p class="skillDesc">stupid baby come on kiss me</p>
-                </div>
-            </div>
-        </div> -->
     </div>
 </body>
 
